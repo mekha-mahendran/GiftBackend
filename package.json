@@ -1,0 +1,32 @@
+{
+  "name": "giftpocket-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "GIFTPocket E-Commerce & Wholesale Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1125.0",
+    "@aws-sdk/client-s3": "^3.1125.0",
+    "@aws-sdk/lib-dynamodb": "^3.1125.0",
+    "@aws-sdk/s3-request-presigner": "^3.1125.0",
+    "@prisma/client": "^6.4.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.3.0",
+    "nodemailer": "^10.1.1",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.4.1"
+  }
+}
